@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Institute — Kelajak Dasturchilarni Tayyorlaymiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<!-- ========================
+     NAV
+======================== -->
+<nav>
+  <div class="logo">Computer <span>Institute</span></div>
+  <ul class="nav-links">
+    <li><a href="#kurslar">Kurslar</a></li>
+    <li><a href="#afzalliklar">Afzalliklar</a></li>
+    <li><a href="#mentorlar">Mentorlar</a></li>
+    <li><a href="#ishlar">Yutuqlar</a></li>
+    <li><a href="#izohlar">Izohlar</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('boglanish').scrollIntoView({behavior:'smooth'})">
+    Ro'yxatdan O'tish →
+  </button>
+</nav>
+
+<!-- ========================
+     TICKER
+======================== -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <div class="ticker-item"><span>★</span> Dasturlash</div>
+    <div class="ticker-item"><span>★</span> Sun'iy Intellekt</div>
+    <div class="ticker-item"><span>★</span> Robototexnika</div>
+    <div class="ticker-item"><span>★</span> UI/UX Dizayn</div>
+    <div class="ticker-item"><span>★</span> 500+ Bitiruvchilar</div>
+    <div class="ticker-item"><span>★</span> 24/7 Video Darslar</div>
+    <div class="ticker-item"><span>★</span> Sertifikat</div>
+    <div class="ticker-item"><span>★</span> Dasturlash</div>
+    <div class="ticker-item"><span>★</span> Sun'iy Intellekt</div>
+    <div class="ticker-item"><span>★</span> Robototexnika</div>
+    <div class="ticker-item"><span>★</span> UI/UX Dizayn</div>
+    <div class="ticker-item"><span>★</span> 500+ Bitiruvchilar</div>
+    <div class="ticker-item"><span>★</span> 24/7 Video Darslar</div>
+    <div class="ticker-item"><span>★</span> Sertifikat</div>
+  </div>
+</div>
+
+<!-- ========================
+     HERO
+======================== -->
+<section class="hero">
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Toshkentdagi Eng Yaxshi IT Maktabi</div>
+    <h1>
+      Kelajak<br>
+      <span class="line2">Dasturchilarni</span><br>
+      <span class="accent-word">Tayyorlaymiz</span>
+    </h1>
+    <p class="hero-desc">
+      Computer Institute — bolalar va o'smirlar uchun zamonaviy IT ta'lim markazi.
+      Dasturlashdan sun'iy intellektgacha — hamma narsa bir joyda.
+      Navi Global, Mars IT darajasida bilim oling.
+    </p>
+    <div class="hero-actions">
+      <a href="#boglanish" class="btn-primary">Bepul Sinov Darsi →</a>
+      <a href="#kurslar" class="btn-secondary">▶ Kurslarni Ko'rish</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">500+</span>
+        <span class="stat-label">O'quvchilar</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Kurs Yo'nalishi</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">95%</span>
+        <span class="stat-label">Muvaffaqiyat</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">24/7</span>
+        <span class="stat-label">Video Darslar</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     COURSES
+======================== -->
+<section id="kurslar">
+  <div class="section-label">Kurslarimiz</div>
+  <h2 class="section-title">Qaysi Yo'nalishni Tanlaysiz?</h2>
+  <p class="section-desc">Dasturlash, AI, Robototexnika va Dizayn — har bir o'quvchi uchun to'g'ri yo'l mavjud.</p>
+
+  <div class="courses-grid fade-in">
+    <div class="course-card card-web">
+      <div class="course-icon">💻</div>
+      <h3>Dasturlash</h3>
+      <p>HTML, CSS, JavaScript, Python — zamonaviy web texnologiyalar bilan professional saytlar yarating.</p>
+      <span class="course-tag">Beginner → Pro</span>
+    </div>
+    <div class="course-card card-ai">
+      <div class="course-icon">🤖</div>
+      <h3>Sun'iy Intellekt</h3>
+      <p>Machine learning, neural networks — kelajakning eng talab yuqori sohasi. Erta boshlang, oldinda bo'ling.</p>
+      <span class="course-tag">AI & ML</span>
+    </div>
+    <div class="course-card card-robo">
+      <div class="course-icon">⚙️</div>
+      <h3>Robototexnika</h3>
+      <p>Arduino, Raspberry Pi — o'z robotingizni o'zingiz yarating. Nazariya + amaliyot yondashuvi.</p>
+      <span class="course-tag">Amaliy Kurs</span>
+    </div>
+    <div class="course-card card-design">
+      <div class="course-icon">🎨</div>
+      <h3>UI/UX Dizayn</h3>
+      <p>Figma, Adobe XD — chiroyli va foydalanuvchi qulay interfeys va mobil ilovalar loyihalash.</p>
+      <span class="course-tag">Creative</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     WHY US
+======================== -->
+<section id="afzalliklar">
+  <div class="section-label">Nima Uchun Biz?</div>
+  <h2 class="section-title">Bizning Ustun<br>Tomonlarimiz</h2>
+  <p class="section-desc">Navi Global, Mars IT kabi yetakchi markazlardan ham yuqori sifatli ta'lim berishga intilamiz.</p>
+
+  <div class="features-grid fade-in">
+    <div class="feature-card">
+      <div class="feature-num">01</div>
+      <h3>24/7 Video Darsliklar</h3>
+      <p>Barcha darslar yozib olinadi. Istagan vaqt, istagan joyda qayta ko'rishingiz mumkin. O'rganish jarayoningizni o'zingiz belgilang.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">02</div>
+      <h3>Tajribali Mentorlar</h3>
+      <p>Asosiy mentor va yordamchi o'qituvchilardan iborat kuchli jamoamiz. Har bir savolingizga javob berishga doimo tayyormiz.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">03</div>
+      <h3>Real Loyihalar</h3>
+      <p>Faqat nazariya emas — haqiqiy loyihalar ustida ishlaysiz. Portfolio yaratib, ish bozorida o'zingizni ko'rsating.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">04</div>
+      <h3>Kichik Guruhlar</h3>
+      <p>Har bir guruhda maksimal 12 o'quvchi. Mentor har birini shaxsiy kuzatadi va qo'llab-quvvatlaydi.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">05</div>
+      <h3>Xalqaro Sertifikat</h3>
+      <p>Kursni tugatgan har bir o'quvchi xalqaro miqyosda tan olingan sertifikat oladi. Bu sizning professional kelajagingiz uchun asos.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">06</div>
+      <h3>Bitiruvchilar Hamjamiyati</h3>
+      <p>Bitiruvchilar hamjamiyatiga qo'shiling. Hackathonlar, tanlovlar va networking imkoniyatlaridan foydalaning.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     VIDEO LESSONS
+======================== -->
+<section id="video">
+  <div class="section-label">Video Darsliklar</div>
+  <h2 class="section-title">24/7 O'rganing</h2>
+  <p class="section-desc">Yuzlab video darslar kutmoqda. Istagan payt boshlang, istagan payt to'xtang.</p>
+
+  <div class="video-grid fade-in">
+    <div class="video-card">
+      <div class="video-thumb" style="background:linear-gradient(135deg,#051525,#0a2035);">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-info">
+        <h4>HTML & CSS — Boshlovchilar Uchun</h4>
+        <div class="video-meta"><span>⏱ 45 daqiqa</span><span>👁 1.2K ko'rish</span></div>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="video-thumb" style="background:linear-gradient(135deg,#0d0a25,#1a1040);">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-info">
+        <h4>Python — O'zgaruvchilar va Funksiyalar</h4>
+        <div class="video-meta"><span>⏱ 60 daqiqa</span><span>👁 890 ko'rish</span></div>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="video-thumb" style="background:linear-gradient(135deg,#051505,#0a2510);">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-info">
+        <h4>Arduino — Birinchi Robot</h4>
+        <div class="video-meta"><span>⏱ 75 daqiqa</span><span>👁 654 ko'rish</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     MENTORS
+======================== -->
+<section id="mentorlar">
+  <div class="section-label">Jamoamiz</div>
+  <h2 class="section-title">Tajribali Mentorlar</h2>
+  <p class="section-desc">Sohadagi yetakchi mutaxassislar siz bilan birga o'rganishadi.</p>
+
+  <div class="mentors-grid fade-in">
+    <div class="mentor-card">
+      <div class="mentor-avatar">👨‍💻</div>
+      <h3>Asosiy Mentor</h3>
+      <div class="mentor-role">Lead Developer</div>
+      <p>10+ yillik tajriba. Full-stack dasturchi va AI mutaxassisi. 300+ o'quvchini tayyorlagan.</p>
+    </div>
+    <div class="mentor-card">
+      <div class="mentor-avatar">👩‍🎨</div>
+      <h3>Dizayn Mentor</h3>
+      <div class="mentor-role">UI/UX Expert</div>
+      <p>Figma va Adobe CC bo'yicha sertifikatlangan mutaxassis. Top dizayn loyihalari muallifi.</p>
+    </div>
+    <div class="mentor-card">
+      <div class="mentor-avatar">👨‍🔬</div>
+      <h3>AI Mentor</h3>
+      <div class="mentor-role">ML Engineer</div>
+      <p>Machine learning va deep learning bo'yicha ixtisoslashgan. Xalqaro musobaqalar g'olibi.</p>
+    </div>
+    <div class="mentor-card">
+      <div class="mentor-avatar">👩‍🏫</div>
+      <h3>Yordamchi Ustoz</h3>
+      <div class="mentor-role">Teaching Assistant</div>
+      <p>O'quvchilarga individual yondashuv. Dars so'ngida qo'shimcha mashg'ulotlar o'tkazadi.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     REVIEWS
+======================== -->
+<section id="izohlar">
+  <div class="section-label">O'quvchilar Izohi</div>
+  <h2 class="section-title">Ular Nima Deydi?</h2>
+  <p class="section-desc">500+ o'quvchimizning fikri — bizning eng yaxshi guvohnomamiz.</p>
+
+  <div class="reviews-grid fade-in">
+    <div class="review-card">
+      <div class="quote-mark">"</div>
+      <p class="review-text">Computer Institute mening hayotimni o'zgartirdi. 6 oy ichida professional web developer bo'ldim. Endi o'z loyihalarim bor va freelance ishlayapman.</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar">👦</div>
+        <div class="reviewer-info">
+          <div class="stars">★★★★★</div>
+          <strong>Ahmadjon T.</strong>
+          <span>Web Developer, 17 yosh</span>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="quote-mark">"</div>
+      <p class="review-text">Boshqa markazlarda ham o'qidim lekin Computer Institute'ning individual yondashuvi boshqacha. Mentor har birimizga alohida vaqt ajratadi.</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar">👧</div>
+        <div class="reviewer-info">
+          <div class="stars">★★★★★</div>
+          <strong>Zulfiya M.</strong>
+          <span>Dizayner, 15 yosh</span>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="quote-mark">"</div>
+      <p class="review-text">AI kursini tugatgach, maktab olimpiadasida 1-o'rin oldim. Mentorlarim doim yonimda bo'ldi. Tavsiya qilaman!</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar">👦</div>
+        <div class="reviewer-info">
+          <div class="stars">★★★★★</div>
+          <strong>Bobur K.</strong>
+          <span>AI Student, 16 yosh</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     YUTUQLAR / STUDENT WORKS
+======================== -->
+<section id="ishlar">
+  <div class="section-label">Yutuqlarimiz</div>
+  <h2 class="section-title">O'quvchilar Qilgan <span style="color:var(--accent)">Haqiqiy Ishlar</span></h2>
+  <p class="section-desc">Haqiqiy loyihalar — haqiqiy ko'nikmalar. O'quvchilarimiz yaratgan jonli saytlarni ko'ring.</p>
+
+  <div class="works-grid fade-in">
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/YusufAl/" target="_blank">
+      <div class="work-preview w1">👤</div>
+      <div class="work-info">
+        <h4>Yusuf — Shaxsiy Portfolio</h4>
+        <p>HTML/CSS/JS — Shaxsiy portfolio sayt</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/45-umumiy-o-rta-talim-maktabi/" target="_blank">
+      <div class="work-preview w2">🏫</div>
+      <div class="work-info">
+        <h4>45-Maktab Sayti</h4>
+        <p>HTML/CSS — Maktab rasmiy sayti</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/ITCRM/" target="_blank">
+      <div class="work-preview w3">📊</div>
+      <div class="work-info">
+        <h4>IT CRM Tizimi</h4>
+        <p>JavaScript — Mijozlar boshqaruv tizimi</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/chatxmy-site/" target="_blank">
+      <div class="work-preview w4">💬</div>
+      <div class="work-info">
+        <h4>Chat Ilovasi</h4>
+        <p>JS/HTML — Real-time chat interfeysi</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/YUSUFGAME/" target="_blank">
+      <div class="work-preview w5">🎮</div>
+      <div class="work-info">
+        <h4>Browser O'yin</h4>
+        <p>JavaScript — Brauzerda ishlovchi o'yin</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/Kundalik.com/" target="_blank">
+      <div class="work-preview w6">📓</div>
+      <div class="work-info">
+        <h4>Kundalik Clone</h4>
+        <p>HTML/CSS — Ta'lim platformasi kloni</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/VAQT/" target="_blank">
+      <div class="work-preview w1">⏰</div>
+      <div class="work-info">
+        <h4>Vaqt Ilovasi</h4>
+        <p>JavaScript — Vaqt boshqaruv ilovasi</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/Chaqchaq/" target="_blank">
+      <div class="work-preview w2">😄</div>
+      <div class="work-info">
+        <h4>Chaqchaq Platforma</h4>
+        <p>HTML/JS — Ijtimoiy media interfeysi</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/S3/" target="_blank">
+      <div class="work-preview w3">☁️</div>
+      <div class="work-info">
+        <h4>S3 Storage UI</h4>
+        <p>HTML/CSS — Fayl saqlash interfeysi</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/Ta-limning-Netflixi/" target="_blank">
+      <div class="work-preview w4">🎬</div>
+      <div class="work-info">
+        <h4>Ta'lim Netflix</h4>
+        <p>HTML/CSS — Streaming ta'lim platformasi</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/Brain-Battle-Blitz/" target="_blank">
+      <div class="work-preview w5">🧠</div>
+      <div class="work-info">
+        <h4>Brain Battle Blitz</h4>
+        <p>JavaScript — Bilim bellashuvi o'yini</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/Yashirin-Al/" target="_blank">
+      <div class="work-preview w6">🤖</div>
+      <div class="work-info">
+        <h4>Yashirin AI</h4>
+        <p>JavaScript/AI — Sun'iy intellekt ilovasi</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/API-Generator/" target="_blank">
+      <div class="work-preview w1">⚡</div>
+      <div class="work-info">
+        <h4>API Generator</h4>
+        <p>JS — Avtomatik API yaratuvchi vosita</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/Orzu/" target="_blank">
+      <div class="work-preview w2">✨</div>
+      <div class="work-info">
+        <h4>Orzu Platformasi</h4>
+        <p>HTML/CSS/JS — Ijodiy loyiha</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/Savdo-Tizimi/" target="_blank">
+      <div class="work-preview w3">🛒</div>
+      <div class="work-info">
+        <h4>Savdo Tizimi</h4>
+        <p>JavaScript — Onlayn do'kon tizimi</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/passive-income-/" target="_blank">
+      <div class="work-preview w4">💰</div>
+      <div class="work-info">
+        <h4>Passive Income</h4>
+        <p>HTML/CSS — Moliyaviy ma'lumot sayti</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/calculator/" target="_blank">
+      <div class="work-preview w5">🔢</div>
+      <div class="work-info">
+        <h4>Kalkulyator</h4>
+        <p>JavaScript — Ilg'or kalkulyator ilovasi</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/My-Milyoner/" target="_blank">
+      <div class="work-preview w6">🏆</div>
+      <div class="work-info">
+        <h4>My Milyoner</h4>
+        <p>JavaScript — Millioner o'yini kloni</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+    <a class="work-card" href="https://yusuf18081998-blip.github.io/Overlord/" target="_blank">
+      <div class="work-preview w1">🌟</div>
+      <div class="work-info">
+        <h4>Overlord Proyekt</h4>
+        <p>HTML/CSS/JS — Kompleks web ilovasi</p>
+        <span class="work-link">Ko'rish →</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ========================
+     CONTACT
+======================== -->
+<section id="boglanish">
+  <div class="contact-wrapper">
+    <div class="contact-info fade-in">
+      <div class="section-label">Bog'lanish</div>
+      <h2>Bugun Boshlang —<br><span style="color:var(--accent)">Kelajak Kutmoqda</span></h2>
+      <p>Bepul sinov darsiga yoziling va Computer Institute oilasiga qo'shiling. Biz siz bilan!</p>
+      <div class="contact-detail">
+        <div class="contact-icon">📞</div>
+        <div>
+          <strong>Telefon</strong>
+          <span>+998 94 587 64 00</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">🌐</div>
+        <div>
+          <strong>Darslar formati</strong>
+          <span>100% Online — Telegram orqali</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">⏰</div>
+        <div>
+          <strong>Ish vaqti</strong>
+          <span>Dushanba-Chorshanba-Juma: 09:00 – 20:00</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">💬</div>
+        <div>
+          <strong>Telegram</strong>
+          <span>@dasturchi_13</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form fade-in">
+      <h3>Bepul Ro'yxatdan O'tish</h3>
+      <div class="form-group">
+        <label>Ism va Familiya</label>
+        <input id="reg-name" type="text" placeholder="Ismingizni kiriting">
+      </div>
+      <div class="form-group">
+        <label>Telefon Raqam</label>
+        <input id="reg-phone" type="tel" placeholder="+998 __ ___ __ __">
+      </div>
+      <div class="form-group">
+        <label>Kurs Yo'nalishi</label>
+        <select id="reg-course">
+          <option value="">Kursni tanlang...</option>
+          <option>💻 Dasturlash</option>
+          <option>🤖 Sun'iy Intellekt (AI)</option>
+          <option>⚙️ Robototexnika</option>
+          <option>🎨 UI/UX Dizayn</option>
+        </select>
+      </div>
+      <button class="submit-btn" id="submit-btn" onclick="sendToTelegram()">
+        Bepul Sinov Darsga Yozilish →
+      </button>
+      <div id="form-status" style="margin-top:14px;font-size:14px;text-align:center;display:none;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     FOOTER
+======================== -->
+<footer>
+  <div class="footer-logo">Computer <span>Institute</span></div>
+  <ul class="footer-links">
+    <li><a href="#kurslar">Kurslar</a></li>
+    <li><a href="#mentorlar">Mentorlar</a></li>
+    <li><a href="#izohlar">Izohlar</a></li>
+    <li><a href="#boglanish">Bog'lanish</a></li>
+  </ul>
+  <div class="footer-copy">© 2025 Computer Institute. Barcha huquqlar himoyalangan.</div>
+</footer>
+
+<!-- ========================
+     JAVASCRIPT
+======================== -->
+<script>
+  // Scroll reveal animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Active nav highlight on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      if (scrollY >= section.offsetTop - 120) current = section.getAttribute('id');
+    });
+    navLinks.forEach(link => {
+      link.style.color = link.getAttribute('href') === '#' + current ? 'var(--accent)' : '';
+    });
+  });
+
+  // ========================
+  // TELEGRAM BOT SUBMISSION
+  // ========================
+  async function sendToTelegram() {
+    const name   = document.getElementById('reg-name').value.trim();
+    const phone  = document.getElementById('reg-phone').value.trim();
+    const course = document.getElementById('reg-course').value;
+    const btn    = document.getElementById('submit-btn');
+    const status = document.getElementById('form-status');
+
+    if (!name || !phone || !course) {
+      status.style.display = 'block';
+      status.style.color   = '#f87171';
+      status.textContent   = '⚠️ Iltimos, barcha maydonlarni to\'ldiring!';
+      return;
+    }
+
+    btn.textContent  = '⏳ Yuborilmoqda...';
+    btn.disabled     = true;
+    status.style.display = 'none';
+
+    // Telegram Bot token va @dasturch_13 chat
+    // @dasturch_13 username orqali xabar yuborish uchun
+    // Bot token o'rniga siz o'zingizning bot tokeningizni qo'ying
+    const BOT_TOKEN = 'YOUR_BOT_TOKEN'; // << O'zingizning bot tokenini shu yerga qo'ying
+    const CHAT_ID   = '@dasturchi_13';
+
+    const message = `
+🎓 *Yangi Ro'yxatdan O'tish — Computer Institute*
+
+👤 *Ism:* ${name}
+📞 *Telefon:* ${phone}
+📚 *Kurs:* ${course}
+
+⏰ Vaqt: ${new Date().toLocaleString('uz-UZ')}
+🌐 Manba: Computer Institute Sayti
+    `.trim();
+
+    try {
+      const res = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id:    CHAT_ID,
+          text:       message,
+          parse_mode: 'Markdown'
+        })
+      });
+
+      const data = await res.json();
+
+      if (data.ok) {
+        btn.textContent      = '✅ Yuborildi!';
+        btn.style.background = '#00b8d4';
+        status.style.display = 'block';
+        status.style.color   = '#4ade80';
+        status.textContent   = '🎉 Muvaffaqiyatli! Tez orada @dasturchi_13 orqali bog\'lanamiz.';
+        document.getElementById('reg-name').value   = '';
+        document.getElementById('reg-phone').value  = '';
+        document.getElementById('reg-course').value = '';
+      } else {
+        throw new Error(data.description || 'Xato');
+      }
+    } catch (err) {
+      // Agar bot token hali sozlanmagan bo'lsa, Telegram linkiga yo'naltirish
+      const tgText = encodeURIComponent(
+        `Salom! Men Computer Institute saytidan ro'yxatdan o'tmoqchiman.\n\nIsm: ${name}\nTelefon: ${phone}\nKurs: ${course}`
+      );
+      window.open(`https://t.me/dasturchi_13?text=${tgText}`, '_blank');
+      btn.textContent      = '✅ Telegram orqali yuborildi!';
+      btn.style.background = '#00b8d4';
+      status.style.display = 'block';
+      status.style.color   = '#4ade80';
+      status.textContent   = '📱 Telegram ochilyapti... @dasturchi_13 ga yozib qoldiring!';
+    }
+  }
+</script>
+
+</body>
+</html>
