@@ -17,15 +17,28 @@
 <nav>
   <div class="logo">Computer <span>Institute</span></div>
   <ul class="nav-links">
-    <li><a href="#kurslar">Kurslar</a></li>
-    <li><a href="#afzalliklar">Afzalliklar</a></li>
-    <li><a href="#mentorlar">Mentorlar</a></li>
-    <li><a href="#ishlar">Yutuqlar</a></li>
-    <li><a href="#izohlar">Izohlar</a></li>
+    <li><a href="#kurslar"><span data-i18n="courses">Kurslar</span></a></li>
+    <li><a href="#afzalliklar"><span data-i18n="features">Afzalliklar</span></a></li>
+    <li><a href="#mentorlar"><span data-i18n="mentors">Mentorlar</span></a></li>
+    <li><a href="#ishlar"><span data-i18n="works">Yutuqlar</span></a></li>
+    <li><a href="#izohlar"><span data-i18n="reviews">Izohlar</span></a></li>
   </ul>
-  <button class="nav-cta" onclick="document.getElementById('boglanish').scrollIntoView({behavior:'smooth'})">
-    Ro'yxatdan O'tish →
-  </button>
+  <div class="nav-controls">
+    <select id="languageSwitcher" class="lang-select">
+      <option value="uz">🇺🇿 UZ</option>
+      <option value="en">🇺🇸 EN</option>
+      <option value="ru">🇷🇺 RU</option>
+    </select>
+
+    <button id="themeToggle" class="theme-toggle" aria-label="Theme">
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+
+    <button class="nav-cta" onclick="document.getElementById('boglanish').scrollIntoView({behavior:'smooth'})">
+      <span data-i18n="register">Ro'yxatdan O'tish</span> →
+    </button>
+  </div>
 </nav>
 
 <!-- ========================
@@ -64,13 +77,13 @@
       <span class="accent-word">Tayyorlaymiz</span>
     </h1>
     <p class="hero-desc">
-      Computer Institute — bolalar va o'smirlar uchun zamonaviy IT ta'lim markazi.
-      Dasturlashdan sun'iy intellektgacha — hamma narsa bir joyda.
-      Navi Global, Mars IT darajasida bilim oling.
+      <span data-i18n="heroDesc">Computer Institute — bolalar va o&apos;smirlar uchun zamonaviy IT ta&apos;lim markazi.</span>
+      <span data-i18n="heroDesc2">Dasturlashdan sun&apos;iy intellektgacha — hamma narsa bir joyda.</span>
+      <span data-i18n="heroDesc3">Navi Global, Mars IT darajasida bilim oling.</span>
     </p>
     <div class="hero-actions">
-      <a href="#boglanish" class="btn-primary">Bepul Sinov Darsi →</a>
-      <a href="#kurslar" class="btn-secondary">▶ Kurslarni Ko'rish</a>
+      <a href="#boglanish" class="btn-primary"><span data-i18n="trial">Bepul Sinov Darsi</span> →</a>
+      <a href="#kurslar" class="btn-secondary">▶ <span data-i18n="viewCourses">Kurslarni Ko&apos;rish</span></a>
     </div>
     <div class="hero-stats">
       <div class="stat-item">
@@ -103,25 +116,25 @@
 
   <div class="courses-grid fade-in">
     <div class="course-card card-web">
-      <div class="course-icon">💻</div>
+      <div class="course-icon"><img src="https://img.icons8.com/fluency/96/source-code.png" alt="Dasturlash"></div>
       <h3>Dasturlash</h3>
       <p>HTML, CSS, JavaScript, Python — zamonaviy web texnologiyalar bilan professional saytlar yarating.</p>
       <span class="course-tag">Beginner → Pro</span>
     </div>
     <div class="course-card card-ai">
-      <div class="course-icon">🤖</div>
+      <div class="course-icon"><img src="https://img.icons8.com/fluency/96/artificial-intelligence.png" alt="AI"></div>
       <h3>Sun'iy Intellekt</h3>
       <p>Machine learning, neural networks — kelajakning eng talab yuqori sohasi. Erta boshlang, oldinda bo'ling.</p>
       <span class="course-tag">AI & ML</span>
     </div>
     <div class="course-card card-robo">
-      <div class="course-icon">⚙️</div>
+      <div class="course-icon"><img src="https://img.icons8.com/fluency/96/robot-2.png" alt="Robototexnika"></div>
       <h3>Robototexnika</h3>
       <p>Arduino, Raspberry Pi — o'z robotingizni o'zingiz yarating. Nazariya + amaliyot yondashuvi.</p>
       <span class="course-tag">Amaliy Kurs</span>
     </div>
     <div class="course-card card-design">
-      <div class="course-icon">🎨</div>
+      <div class="course-icon"><img src="https://img.icons8.com/fluency/96/design.png" alt="UI/UX"></div>
       <h3>UI/UX Dizayn</h3>
       <p>Figma, Adobe XD — chiroyli va foydalanuvchi qulay interfeys va mobil ilovalar loyihalash.</p>
       <span class="course-tag">Creative</span>
@@ -220,25 +233,25 @@
 
   <div class="mentors-grid fade-in">
     <div class="mentor-card">
-      <div class="mentor-avatar">👨‍💻</div>
+      <div class="mentor-avatar"><img src="https://i.pravatar.cc/160?img=12" alt="Mentor"></div>
       <h3>Asosiy Mentor</h3>
       <div class="mentor-role">Lead Developer</div>
       <p>10+ yillik tajriba. Full-stack dasturchi va AI mutaxassisi. 300+ o'quvchini tayyorlagan.</p>
     </div>
     <div class="mentor-card">
-      <div class="mentor-avatar">👩‍🎨</div>
+      <div class="mentor-avatar"><img src="https://i.pravatar.cc/160?img=32" alt="Mentor"></div>
       <h3>Dizayn Mentor</h3>
       <div class="mentor-role">UI/UX Expert</div>
       <p>Figma va Adobe CC bo'yicha sertifikatlangan mutaxassis. Top dizayn loyihalari muallifi.</p>
     </div>
     <div class="mentor-card">
-      <div class="mentor-avatar">👨‍🔬</div>
+      <div class="mentor-avatar"><img src="https://i.pravatar.cc/160?img=52" alt="Mentor"></div>
       <h3>AI Mentor</h3>
       <div class="mentor-role">ML Engineer</div>
       <p>Machine learning va deep learning bo'yicha ixtisoslashgan. Xalqaro musobaqalar g'olibi.</p>
     </div>
     <div class="mentor-card">
-      <div class="mentor-avatar">👩‍🏫</div>
+      <div class="mentor-avatar"><img src="https://i.pravatar.cc/160?img=44" alt="Mentor"></div>
       <h3>Yordamchi Ustoz</h3>
       <div class="mentor-role">Teaching Assistant</div>
       <p>O'quvchilarga individual yondashuv. Dars so'ngida qo'shimcha mashg'ulotlar o'tkazadi.</p>
@@ -259,7 +272,7 @@
       <div class="quote-mark">"</div>
       <p class="review-text">Computer Institute mening hayotimni o'zgartirdi. 6 oy ichida professional web developer bo'ldim. Endi o'z loyihalarim bor va freelance ishlayapman.</p>
       <div class="reviewer">
-        <div class="reviewer-avatar">👦</div>
+        <div class="reviewer-avatar"><img src="https://i.pravatar.cc/80?img=11" alt="Ahmadjon"></div>
         <div class="reviewer-info">
           <div class="stars">★★★★★</div>
           <strong>Ahmadjon T.</strong>
@@ -271,7 +284,7 @@
       <div class="quote-mark">"</div>
       <p class="review-text">Boshqa markazlarda ham o'qidim lekin Computer Institute'ning individual yondashuvi boshqacha. Mentor har birimizga alohida vaqt ajratadi.</p>
       <div class="reviewer">
-        <div class="reviewer-avatar">👧</div>
+        <div class="reviewer-avatar"><img src="https://i.pravatar.cc/80?img=47" alt="Zulfiya"></div>
         <div class="reviewer-info">
           <div class="stars">★★★★★</div>
           <strong>Zulfiya M.</strong>
@@ -283,7 +296,7 @@
       <div class="quote-mark">"</div>
       <p class="review-text">AI kursini tugatgach, maktab olimpiadasida 1-o'rin oldim. Mentorlarim doim yonimda bo'ldi. Tavsiya qilaman!</p>
       <div class="reviewer">
-        <div class="reviewer-avatar">👦</div>
+        <div class="reviewer-avatar"><img src="https://i.pravatar.cc/80?img=8" alt="Bobur"></div>
         <div class="reviewer-info">
           <div class="stars">★★★★★</div>
           <strong>Bobur K.</strong>
@@ -305,7 +318,7 @@
   <div class="works-grid fade-in">
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/YusufAl/" target="_blank">
-      <div class="work-preview w1">👤</div>
+      <div class="work-preview w1"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/YusufAl/&screenshot=true&meta=false&embed=screenshot.url" alt="Yusuf Portfolio" loading="lazy" onerror="this.parentElement.innerHTML='<span style=font-size:48px>👤</span>'"></div>
       <div class="work-info">
         <h4>Yusuf — Shaxsiy Portfolio</h4>
         <p>HTML/CSS/JS — Shaxsiy portfolio sayt</p>
@@ -314,7 +327,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/45-umumiy-o-rta-talim-maktabi/" target="_blank">
-      <div class="work-preview w2">🏫</div>
+      <div class="work-preview w2"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/45-umumiy-o-rta-talim-maktabi/&screenshot=true&meta=false&embed=screenshot.url" alt="45-Maktab" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>🏫</span>\'"></div>
       <div class="work-info">
         <h4>45-Maktab Sayti</h4>
         <p>HTML/CSS — Maktab rasmiy sayti</p>
@@ -323,7 +336,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/ITCRM/" target="_blank">
-      <div class="work-preview w3">📊</div>
+      <div class="work-preview w3"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/ITCRM/&screenshot=true&meta=false&embed=screenshot.url" alt="IT CRM" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>📊</span>\'"></div>
       <div class="work-info">
         <h4>IT CRM Tizimi</h4>
         <p>JavaScript — Mijozlar boshqaruv tizimi</p>
@@ -332,7 +345,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/chatxmy-site/" target="_blank">
-      <div class="work-preview w4">💬</div>
+      <div class="work-preview w4"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/chatxmy-site/&screenshot=true&meta=false&embed=screenshot.url" alt="Chat Ilovasi" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>💬</span>\'"></div>
       <div class="work-info">
         <h4>Chat Ilovasi</h4>
         <p>JS/HTML — Real-time chat interfeysi</p>
@@ -341,7 +354,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/YUSUFGAME/" target="_blank">
-      <div class="work-preview w5">🎮</div>
+      <div class="work-preview w5"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/YUSUFGAME/&screenshot=true&meta=false&embed=screenshot.url" alt="Browser O'yin" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>🎮</span>\'"></div>
       <div class="work-info">
         <h4>Browser O'yin</h4>
         <p>JavaScript — Brauzerda ishlovchi o'yin</p>
@@ -350,7 +363,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/Kundalik.com/" target="_blank">
-      <div class="work-preview w6">📓</div>
+      <div class="work-preview w6"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/Kundalik.com/&screenshot=true&meta=false&embed=screenshot.url" alt="Kundalik Clone" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>📓</span>\'"></div>
       <div class="work-info">
         <h4>Kundalik Clone</h4>
         <p>HTML/CSS — Ta'lim platformasi kloni</p>
@@ -359,7 +372,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/VAQT/" target="_blank">
-      <div class="work-preview w1">⏰</div>
+      <div class="work-preview w1"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/VAQT/&screenshot=true&meta=false&embed=screenshot.url" alt="Vaqt Ilovasi" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>⏰</span>\'"></div>
       <div class="work-info">
         <h4>Vaqt Ilovasi</h4>
         <p>JavaScript — Vaqt boshqaruv ilovasi</p>
@@ -368,7 +381,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/Chaqchaq/" target="_blank">
-      <div class="work-preview w2">😄</div>
+      <div class="work-preview w2"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/Chaqchaq/&screenshot=true&meta=false&embed=screenshot.url" alt="Chaqchaq" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>😄</span>\'"></div>
       <div class="work-info">
         <h4>Chaqchaq Platforma</h4>
         <p>HTML/JS — Ijtimoiy media interfeysi</p>
@@ -377,7 +390,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/S3/" target="_blank">
-      <div class="work-preview w3">☁️</div>
+      <div class="work-preview w3"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/S3/&screenshot=true&meta=false&embed=screenshot.url" alt="S3 Storage" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>☁️</span>\'"></div>
       <div class="work-info">
         <h4>S3 Storage UI</h4>
         <p>HTML/CSS — Fayl saqlash interfeysi</p>
@@ -386,7 +399,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/Ta-limning-Netflixi/" target="_blank">
-      <div class="work-preview w4">🎬</div>
+      <div class="work-preview w4"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/Ta-limning-Netflixi/&screenshot=true&meta=false&embed=screenshot.url" alt="Ta'lim Netflix" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>🎬</span>\'"></div>
       <div class="work-info">
         <h4>Ta'lim Netflix</h4>
         <p>HTML/CSS — Streaming ta'lim platformasi</p>
@@ -395,7 +408,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/Brain-Battle-Blitz/" target="_blank">
-      <div class="work-preview w5">🧠</div>
+      <div class="work-preview w5"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/Brain-Battle-Blitz/&screenshot=true&meta=false&embed=screenshot.url" alt="Brain Battle Blitz" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>🧠</span>\'"></div>
       <div class="work-info">
         <h4>Brain Battle Blitz</h4>
         <p>JavaScript — Bilim bellashuvi o'yini</p>
@@ -404,7 +417,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/Yashirin-Al/" target="_blank">
-      <div class="work-preview w6">🤖</div>
+      <div class="work-preview w6"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/Yashirin-Al/&screenshot=true&meta=false&embed=screenshot.url" alt="Yashirin AI" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>🤖</span>\'"></div>
       <div class="work-info">
         <h4>Yashirin AI</h4>
         <p>JavaScript/AI — Sun'iy intellekt ilovasi</p>
@@ -413,7 +426,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/API-Generator/" target="_blank">
-      <div class="work-preview w1">⚡</div>
+      <div class="work-preview w1"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/API-Generator/&screenshot=true&meta=false&embed=screenshot.url" alt="API Generator" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>⚡</span>\'"></div>
       <div class="work-info">
         <h4>API Generator</h4>
         <p>JS — Avtomatik API yaratuvchi vosita</p>
@@ -422,7 +435,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/Orzu/" target="_blank">
-      <div class="work-preview w2">✨</div>
+      <div class="work-preview w2"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/Orzu/&screenshot=true&meta=false&embed=screenshot.url" alt="Orzu Platformasi" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>✨</span>\'"></div>
       <div class="work-info">
         <h4>Orzu Platformasi</h4>
         <p>HTML/CSS/JS — Ijodiy loyiha</p>
@@ -431,7 +444,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/Savdo-Tizimi/" target="_blank">
-      <div class="work-preview w3">🛒</div>
+      <div class="work-preview w3"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/Savdo-Tizimi/&screenshot=true&meta=false&embed=screenshot.url" alt="Savdo Tizimi" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>🛒</span>\'"></div>
       <div class="work-info">
         <h4>Savdo Tizimi</h4>
         <p>JavaScript — Onlayn do'kon tizimi</p>
@@ -440,7 +453,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/passive-income-/" target="_blank">
-      <div class="work-preview w4">💰</div>
+      <div class="work-preview w4"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/passive-income-/&screenshot=true&meta=false&embed=screenshot.url" alt="Passive Income" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>💰</span>\'"></div>
       <div class="work-info">
         <h4>Passive Income</h4>
         <p>HTML/CSS — Moliyaviy ma'lumot sayti</p>
@@ -449,7 +462,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/calculator/" target="_blank">
-      <div class="work-preview w5">🔢</div>
+      <div class="work-preview w5"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/calculator/&screenshot=true&meta=false&embed=screenshot.url" alt="Kalkulyator" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>🔢</span>\'"></div>
       <div class="work-info">
         <h4>Kalkulyator</h4>
         <p>JavaScript — Ilg'or kalkulyator ilovasi</p>
@@ -458,7 +471,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/My-Milyoner/" target="_blank">
-      <div class="work-preview w6">🏆</div>
+      <div class="work-preview w6"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/My-Milyoner/&screenshot=true&meta=false&embed=screenshot.url" alt="My Milyoner" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>🏆</span>\'"></div>
       <div class="work-info">
         <h4>My Milyoner</h4>
         <p>JavaScript — Millioner o'yini kloni</p>
@@ -467,7 +480,7 @@
     </a>
 
     <a class="work-card" href="https://yusuf18081998-blip.github.io/Overlord/" target="_blank">
-      <div class="work-preview w1">🌟</div>
+      <div class="work-preview w1"><img src="https://api.microlink.io/?url=https://yusuf18081998-blip.github.io/Overlord/&screenshot=true&meta=false&embed=screenshot.url" alt="Overlord" loading="lazy" onerror="this.style.display=\'none\';this.parentElement.innerHTML+=\'<span style=font-size:48px>🌟</span>\'"></div>
       <div class="work-info">
         <h4>Overlord Proyekt</h4>
         <p>HTML/CSS/JS — Kompleks web ilovasi</p>
@@ -476,6 +489,7 @@
     </a>
 
   </div>
+  
 </section>
 
 <!-- ========================
@@ -551,9 +565,9 @@
 <footer>
   <div class="footer-logo">Computer <span>Institute</span></div>
   <ul class="footer-links">
-    <li><a href="#kurslar">Kurslar</a></li>
-    <li><a href="#mentorlar">Mentorlar</a></li>
-    <li><a href="#izohlar">Izohlar</a></li>
+    <li><a href="#kurslar"><span data-i18n="courses">Kurslar</span></a></li>
+    <li><a href="#mentorlar"><span data-i18n="mentors">Mentorlar</span></a></li>
+    <li><a href="#izohlar"><span data-i18n="reviews">Izohlar</span></a></li>
     <li><a href="#boglanish">Bog'lanish</a></li>
   </ul>
   <div class="footer-copy">© 2025 Computer Institute. Barcha huquqlar himoyalangan.</div>
@@ -662,6 +676,95 @@
       status.textContent   = '📱 Telegram ochilyapti... @dasturchi_13 ga yozib qoldiring!';
     }
   }
+
+  // ========================
+  // THEME + LANGUAGE
+  // ========================
+  const themeBtn = document.getElementById('themeToggle');
+
+  function setTheme(mode){
+    document.body.classList.toggle('light', mode === 'light');
+    const moon = themeBtn.querySelector('.icon-moon');
+    const sun  = themeBtn.querySelector('.icon-sun');
+    if(mode === 'light'){
+      moon.style.display = 'none';
+      sun.style.display  = 'block';
+    } else {
+      moon.style.display = 'block';
+      sun.style.display  = 'none';
+    }
+    localStorage.setItem('theme', mode);
+  }
+
+  setTheme(localStorage.getItem('theme') || 'dark');
+
+  themeBtn.addEventListener('click', () => {
+    setTheme(document.body.classList.contains('light') ? 'dark' : 'light');
+  });
+
+  const translations = {
+    uz: {
+      courses: "Kurslar",
+      features: "Afzalliklar",
+      mentors: "Mentorlar",
+      works: "Yutuqlar",
+      reviews: "Izohlar",
+      register: "Ro'yxatdan O'tish",
+      heroTitle: "Kelajak Dasturchilarni Tayyorlaymiz",
+      heroDesc: "Computer Institute — bolalar va o'smirlar uchun zamonaviy IT ta'lim markazi.",
+      heroDesc2: "Dasturlashdan sun'iy intellektgacha — hamma narsa bir joyda.",
+      heroDesc3: "Navi Global, Mars IT darajasida bilim oling.",
+      trial: "Bepul Sinov Darsi",
+      viewCourses: "Kurslarni Ko'rish"
+    },
+    en: {
+      courses: "Courses",
+      features: "Features",
+      mentors: "Mentors",
+      works: "Projects",
+      reviews: "Reviews",
+      register: "Register",
+      heroTitle: "We Train Future Developers",
+      heroDesc: "Computer Institute — a modern IT education center for children and teenagers.",
+      heroDesc2: "From programming to artificial intelligence — everything in one place.",
+      heroDesc3: "Learn at the level of leading IT schools.",
+      trial: "Free Trial Lesson",
+      viewCourses: "View Courses"
+    },
+    ru: {
+      courses: "Курсы",
+      features: "Преимущества",
+      mentors: "Наставники",
+      works: "Проекты",
+      reviews: "Отзывы",
+      register: "Записаться",
+      heroTitle: "Готовим разработчиков будущего",
+      heroDesc: "Computer Institute — современный IT-центр для детей и подростков.",
+      heroDesc2: "От программирования до искусственного интеллекта — всё в одном месте.",
+      heroDesc3: "Обучение на уровне ведущих IT-школ.",
+      trial: "Бесплатный пробный урок",
+      viewCourses: "Смотреть курсы"
+    }
+  };
+
+  function setLanguage(lang){
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.dataset.i18n;
+      if(translations[lang] && translations[lang][key]){
+        el.textContent = translations[lang][key];
+      }
+    });
+    localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang;
+  }
+
+  const langSwitcher = document.getElementById('languageSwitcher');
+  const savedLang = localStorage.getItem('lang') || 'uz';
+  langSwitcher.value = savedLang;
+  setLanguage(savedLang);
+
+  langSwitcher.addEventListener('change', (e) => setLanguage(e.target.value));
+
 </script>
 
 </body>
